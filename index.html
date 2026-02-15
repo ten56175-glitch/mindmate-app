@@ -1,146 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate — продажа AI приложения</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: white;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .header {
-            padding: 30px 0;
-            border-bottom: 1px solid #222;
-        }
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #6366f1, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 0;
-        }
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #fff, #a0a0a0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p {
-            font-size: 20px;
-            color: #b0b0b0;
-            margin-bottom: 30px;
-        }
-        .btn {
-            padding: 14px 32px;
-            border-radius: 40px;
-            text-decoration: none;
-            display: inline-block;
-            background: linear-gradient(135deg, #6366f1, #a855f7);
-            color: white;
-        }
-        .contacts {
-            margin-top: 40px;
-            color: #888;
-        }
-        .contacts a {
-            color: #6366f1;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindMate — AI приложение для продуктивности | Продажа исходного кода</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #58a6ff;
+    }
+    .lang-buttons {
+      margin-bottom: 20px;
+    }
+    .lang-buttons button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .lang-buttons button.active {
+      background: #238636;
+      border-color: #238636;
+    }
+    .feature {
+      margin: 15px 0;
+      padding: 15px;
+      background: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+    .price-tier {
+      background: #1f6feb1a;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      border: 1px solid #1f6feb;
+    }
+    .buy-button {
+      display: inline-block;
+      background: #238636;
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 20px 0;
+    }
+    .buy-button:hover {
+      background: #2ea043;
+    }
+    .contact {
+      margin-top: 40px;
+      padding: 20px;
+      background: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">🚀 MindMate</div>
-        </header>
-        
-        <section class="hero">
-            <h1>AI приложение для продуктивности</h1>
-            <p>Готовый код с искусственным интеллектом и монетизацией</p>
-            <a href="#" class="btn">Купить за $2,900</a>
-            <div class="contacts">
-                <p style="font-size: 24px; color: #6366f1; font-weight: bold; margin: 30px 0 20px;">💰 Полный код: $2,900</p>
-                <p>📧 Email: <a href="mailto:ten56175@gmail.com">ten56175@gmail.com</a></p>
-                <p>📱 Telegram: <a href="https://t.me/+77081349022">+7 708 134 9022</a></p>
-            </div>
-        </section>
 
-        <section style="margin: 60px 0;">
-            <h2 style="font-size: 32px;">✨ Функции</h2>
-            <div style="display: grid; gap: 20px; margin-top: 30px;">
-                <div style="background: #111; padding: 24px; border-radius: 24px;">
-                    <div style="font-size: 32px;">🤖</div>
-                    <h3>AI Чат</h3>
-                    <p style="color: #aaa;">6 языков, озвучивание</p>
-                </div>
-                <div style="background: #111; padding: 24px; border-radius: 24px;">
-                    <div style="font-size: 32px;">📷</div>
-                    <h3>Анализ фото</h3>
-                    <p style="color: #aaa;">AI распознавание</p>
-                </div>
-                <div style="background: #111; padding: 24px; border-radius: 24px;">
-                    <div style="font-size: 32px;">✏️</div>
-                    <h3>Редактор фото</h3>
-                    <p style="color: #aaa;">Инструкции текстом</p>
-                </div>
-                <div style="background: #111; padding: 24px; border-radius: 24px;">
-                    <div style="font-size: 32px;">✅</div>
-                    <h3>Задачи</h3>
-                    <p style="color: #aaa;">Приоритеты, статистика</p>
-                </div>
-                <div style="background: #111; padding: 24px; border-radius: 24px;">
-                    <div style="font-size: 32px;">💳</div>
-                    <h3>Подписка</h3>
-                    <p style="color: #aaa;">$4.99/месяц, RevenueCat</p>
-                </div>
-            </div>
-        </section>
+<div class="container">
 
-        <section style="background: #111; border-radius: 32px; padding: 40px; margin: 60px 0;">
-            <h2>🛠️ Технологии</h2>
-            <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 30px;">
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">React Native</div>
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">Expo</div>
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">TypeScript</div>
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">Node.js</div>
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">PostgreSQL</div>
-                <div style="background:#1a1a1a; padding:12px; border-radius:40px; text-align:center;">RevenueCat</div>
-            </div>
-        </section>
+  <!-- Переключатель языка -->
+  <div class="lang-buttons">
+    <button onclick="toggleLanguage('ru')" class="active">Русский</button>
+    <button onclick="toggleLanguage('en')">English</button>
+  </div>
 
-        <section style="margin: 60px 0;">
-            <h2>📦 В комплекте</h2>
-            <div style="margin-top:30px;">
-                <div style="background:#111; padding:16px; margin-bottom:10px; border-radius:16px;">✓ Полный исходный код</div>
-                <div style="background:#111; padding:16px; margin-bottom:10px; border-radius:16px;">✓ Backend и база данных</div>
-                <div style="background:#111; padding:16px; margin-bottom:10px; border-radius:16px;">✓ Документация</div>
-                <div style="background:#111; padding:16px; margin-bottom:10px; border-radius:16px;">✓ Иконки и Splash</div>
-            </div>
-        </section>
+  <!-- Русская версия -->
+  <div id="ru" class="lang-content">
 
-        <footer style="text-align:center; padding:40px 0; color:#666;">
-            <p>© 2025 MindMate · По вопросам покупки:</p>
-            <p>📧 <a href="mailto:ten56175@gmail.com" style="color: #6366f1;">ten56175@gmail.com</a></p>
-            <p>📱 Telegram: <a href="https://t.me/+77081349022" style="color: #6366f1;">+7 708 134 9022</a></p>
-        </footer>
+    <h1>MindMate — AI приложение для продуктивности</h1>
+    <h2>Готовый исходный код с ИИ и монетизацией</h2>
+
+    <p>Полноценное мобильное приложение на React Native с продвинутыми функциями искусственного интеллекта и встроенной системой подписок.</p>
+
+    <h3>Основные функции</h3>
+    <div class="feature">🤖 AI Чат-ассистент: поддержка 6 языков, озвучивание ответов, история сообщений</div>
+    <div class="feature">📷 Анализ фото: загрузка из галереи/камеры, ИИ-распознавание содержимого, ввод контекста</div>
+    <div class="feature">✏️ Редактирование фото ИИ: изменение по естественному языку (инструкции текстом)</div>
+    <div class="feature">✅ Управление задачами: создание/редактирование, фильтры, приоритеты, статистика</div>
+    <div class="feature">👤 Профиль пользователя: настройки, выбор языка, тёмный/светлый режим, статистика</div>
+    <div class="feature">💳 Премиум-подписка: $4.99/месяц через RevenueCat, встроенные покупки</div>
+
+    <h3>Технологии</h3>
+    <ul>
+      <li>React Native + Expo 54</li>
+      <li>TypeScript</li>
+      <li>Backend: Node.js + Express</li>
+      <li>База данных: PostgreSQL</li>
+      <li>Монетизация: RevenueCat</li>
+    </ul>
+
+    <h3>Варианты покупки</h3>
+    <div class="price-tier">
+      <strong>Non-exclusive лицензия</strong> — $599<br>
+      (несколько покупателей могут купить, права на использование, без перепродажи)
     </div>
+    <div class="price-tier">
+      <strong>Exclusive права</strong> — $2,900<br>
+      (полные права одному покупателю, передача всего проекта)
+    </div>
+    <p>Или лучшая цена по договорённости (OBO) — пишите!</p>
+
+    <a href="https://t.me/+77081349022" class="buy-button">Связаться и купить</a>
+
+    <div class="contact">
+      <p><strong>Контакты:</strong></p>
+      <p>Email: ten56175@gmail.com</p>
+      <p>Telegram: +7 708 134 9022</p>
+    </div>
+
+  </div>
+
+  <!-- Английская версия -->
+  <div id="en" class="lang-content hidden">
+
+    <h1>MindMate — AI Productivity App</h1>
+    <h2>Full Source Code with AI & Monetization</h2>
+
+    <p>Complete mobile app built with React Native featuring advanced AI tools and built-in subscription system.</p>
+
+    <h3>Main Features</h3>
+    <div class="feature">🤖 AI Chat Assistant: 6 languages, text-to-speech, message history</div>
+    <div class="feature">📷 Photo Analysis: Upload from gallery/camera, AI content recognition, context input</div>
+    <div class="feature">✏️ AI Photo Editing: Natural language instructions for transformations</div>
+    <div class="feature">✅ Task Management: Create/edit tasks, filters, priority sorting, statistics</div>
+    <div class="feature">👤 User Profile: Settings, language switch, dark/light mode, usage stats</div>
+    <div class="feature">💳 Premium Subscription: $4.99/month via RevenueCat, in-app purchases</div>
+
+    <h3>Tech Stack</h3>
+    <ul>
+      <li>React Native + Expo 54</li>
+      <li>TypeScript</li>
+      <li>Backend: Node.js + Express</li>
+      <li>Database: PostgreSQL</li>
+      <li>Monetization: RevenueCat</li>
+    </ul>
+
+    <h3>Pricing Options</h3>
+    <div class="price-tier">
+      <strong>Non-exclusive License</strong> — $599<br>
+      (multiple buyers allowed, usage rights only)
+    </div>
+    <div class="price-tier">
+      <strong>Exclusive Rights</strong> — $2,900<br>
+      (full ownership to one buyer, complete project transfer)
+    </div>
+    <p>Or best offer (OBO) — contact me!</p>
+
+    <a href="https://t.me/+77081349022" class="buy-button">Contact & Buy</a>
+
+    <div class="contact">
+      <p><strong>Contact:</strong></p>
+      <p>Email: ten56175@gmail.com</p>
+      <p>Telegram: +7 708 134 9022</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function toggleLanguage(lang) {
+    document.getElementById('ru').classList.toggle('hidden', lang !== 'ru');
+    document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+
+    document.querySelectorAll('.lang-buttons button').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang));
+    });
+  }
+
+  // По умолчанию русский
+  toggleLanguage('ru');
+</script>
+
 </body>
 </html>
